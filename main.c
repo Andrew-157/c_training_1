@@ -2,13 +2,13 @@
 
 int main()
 {
-    int myFavoriteNumber = 0;
+    int age;
 
-    printf("Please, enter your favorite number: ");
+    printf("Please, enter your age: ");
 
-    scanf("%d", &myFavoriteNumber);
+    scanf("%d", &age);
 
-    printf("Your favorite number is: %d\n", myFavoriteNumber);
+    printf("Your favorite number is: %d\n", age);
 
     return 0;
 }
