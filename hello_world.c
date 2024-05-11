@@ -3,4 +3,6 @@
 int main()
 {
     printf("Hello World! I don't give a bug");
+
+    return 0;
 }
