@@ -1,9 +1,13 @@
 #include <stdio.h>
 
-int CONST = 1;
+void something()
+{
+    auto int someInt = 5;
+    printf("%d", someInt);
+}
 
 int main()
 {
-    char string[20] = {'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '\0'};
+    something();
     return 0;
 }
