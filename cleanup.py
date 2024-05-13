@@ -4,10 +4,10 @@ import re
 import os
 
 compiling_intermediate_files = {
-    "Preprocessed file": r".*\.i",
-    "Assembly code file": r".*\.s",
-    "Object code file": r".*\.o",
-    "Executable file": r".*\.exe"
+    "Preprocessed file": r".*\.i$",
+    "Assembly code file": r".*\.s$",
+    "Object code file": r".*\.o$",
+    "Executable file": r".*\.exe$"
 }
 
 def cleanup(dir_path):

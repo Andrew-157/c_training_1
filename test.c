@@ -1,13 +1,8 @@
 #include <stdio.h>
 
-void something()
-{
-    auto int someInt = 5;
-    printf("%d", someInt);
-}
-
 int main()
 {
-    something();
-    return 0;
+
+    const int myConst = 5;
+    myConst = 6;
 }
