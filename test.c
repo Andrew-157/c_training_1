@@ -1,8 +1,10 @@
 #include <stdio.h>
+#define a 3
 
 int main()
 {
 
-    const int myConst = 5;
-    myConst = 6;
+    // printf("The value of pi: %.2f", pi);
+    // return 0;
+    printf("%d", a);
 }
