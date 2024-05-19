@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-extern int a;
+#include "file2.c"
 
 int main()
 {

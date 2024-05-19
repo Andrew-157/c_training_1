@@ -61,3 +61,30 @@ gcc -W file1.o file2.o
 ```
 
 This will generate executable in the current directory.
+
+4. How to do the same as in **3** without using extern
+
+You can use `#include "file2.c"` preprocessor directive in file1.c instead of using extern.
+
+file1.c
+```c
+#include <stdio.h>
+#include "file2.c" // provide path to file2.c if it is not in the same directory as file1.c
+
+int main()
+{
+    printf("%d\n", a);
+    return 0;
+}
+```
+
+file2.c
+
+```c
+int a = 33;
+```
+
+Now you can just run:
+```bash
+gcc file1.c
+```
