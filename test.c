@@ -1,10 +1,13 @@
 #include <stdio.h>
-#define a 3
+
+// In C internally the default
+// type of 'var' is int
+enum VARS
+{
+    var = 42
+};
 
 int main()
 {
-
-    // printf("The value of pi: %.2f", pi);
-    // return 0;
-    printf("%d", a);
+    return 0;
 }

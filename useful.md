@@ -20,3 +20,44 @@
     - `-Wall` - enables all compiler’s warning messages
     - `-o` - used to specify the output file name
     - `-save-temps` - creates all intermediate files along with the executable in the current directory
+
+3. How to link files using **gcc**
+
+For example, you have 2 files: *file1.c*, *file2.c*
+
+**file1.c**:
+```c
+#include <stdio.h>
+
+extern int a;
+
+int main()
+{
+    printf("%d\n", a);
+    return 0;
+}
+```
+
+**file2.c**
+```c
+
+int a = 33;
+```
+
+Using *extern* keyword, file1.c uses variable **a**. To be able to use that variable from file2.c in file1.c, you need to link those files:
+
+1. Generate object files:
+
+```bash
+gcc -c file1.c file2.c
+```
+
+The following files will be generated in the current directory: file1.o, file2.o
+
+To link those object files into one executable, run the following:
+
+```bash
+gcc -W file1.o file2.o 
+```
+
+This will generate executable in the current directory.
