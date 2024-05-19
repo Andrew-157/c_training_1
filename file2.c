@@ -1,2 +1,2 @@
 
-int a = 33;
+static int a = 33;
