@@ -2,15 +2,12 @@
 
 int main()
 {
-    int size_of_integer = sizeof(int);
-    int size_of_char = sizeof(char);
-    int size_of_float = sizeof(float);
-    int size_of_double = sizeof(double);
 
-    printf("Size of Integer: %d\n", size_of_integer);
-    printf("Size of Char: %d\n", size_of_char);
-    printf("Size of Float: %d\n", size_of_float);
-    printf("Size of Double: %d\n", size_of_double);
+    int num1 = 248;
+    signed int num2 = 23124;
+
+    printf("size of num1: %d", sizeof(num1));
+    printf("\nsize of num2: %u", sizeof(num2));
 
     return 0;
 }
