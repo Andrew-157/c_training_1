@@ -22,4 +22,5 @@ def cleanup(dir_path):
                     print(f"{k}: {full_path} was removed")
 
 
-cleanup('./')
+if __name__ == '__main__':
+    cleanup('./')
