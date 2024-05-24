@@ -2,10 +2,10 @@
 
 int main()
 {
-    int a = -1;
-    unsigned int b = a;
 
-    printf("%u", b);
+    char sentence[50];
 
-    return 0;
+    printf("Enter a Sentence: ");
+    scanf("%[^\n]s", &sentence);
+    printf("Sentence you entered is: %s", sentence);
 }
