@@ -2,7 +2,12 @@
 
 int main()
 {
-    unsigned int a = 1000000000000000000;
-    printf("%d", a);
+    char a = 'A';
+    char b = 'B';
+
+    printf("a = %c\n", a);
+    printf("b = %c\n", b);
+    printf("a + b = %c\n", a + b);
+
     return 0;
 }
