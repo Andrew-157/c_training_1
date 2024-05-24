@@ -2,12 +2,10 @@
 
 int main()
 {
-    char a = 'A';
-    char b = 'B';
+    int a = -1;
+    unsigned int b = a;
 
-    printf("a = %c\n", a);
-    printf("b = %c\n", b);
-    printf("a + b = %c\n", a + b);
+    printf("%u", b);
 
     return 0;
 }
