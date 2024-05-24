@@ -112,3 +112,17 @@ int main()
     return 0;
 }
 ```
+
+6. `getchar()`
+
+```c
+#include <stdio.h>
+
+int main()
+{
+
+    while (getchar() != '\n');
+}
+```
+
+Just run it

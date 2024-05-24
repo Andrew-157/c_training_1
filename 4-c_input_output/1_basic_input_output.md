@@ -25,7 +25,7 @@ where %X is the format specifier in C. It is a way to tell the compiler what typ
 
 ## How to take input and output of basic types in C?
 
-The basic type in C includes types like int, float, char, etc. Inorder to input or output the specific type, the X in the above syntax is changed with the specific format specifier of that type. The Syntax for input and output for these are:
+The basic type in C includes types like int, float, char, etc. In order to input or output the specific type, the X in the above syntax is changed with the specific format specifier of that type. The Syntax for input and output for these are:
 
 - **Integer**
 ```c
@@ -92,7 +92,7 @@ int main()
 }
 ```
 
-**Note:** *When taking input for char in the example above, notice space `scanf(" %c", &ch);`, this is necessary before without it `Enter` from the previous input may be taken as input.*
+**Note:** *When taking input for char in the example above, notice space `scanf(" %c", &ch);`, this is necessary before without it `Enter`(`\n`) from the previous input may be taken as input.*
 
 Output
 ```bash
