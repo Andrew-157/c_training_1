@@ -1,11 +1,8 @@
-// C Program to demonstrate using of
-// bool as a function return type
-#include <stdbool.h>
 #include <stdio.h>
 
 int main()
 {
-
-    char a = '\x4a';
-    printf("%c", a);
+    unsigned int a = 1000000000000000000;
+    printf("%d", a);
+    return 0;
 }
