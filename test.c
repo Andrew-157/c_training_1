@@ -5,13 +5,9 @@ int main()
 
     int a, b;
 
-    printf("Enter first number: ");
-    scanf("%d", &a);
+    int scanf_return = scanf("%d %d", &a, &b);
+    printf("A: %d\nB: %d", a, b);
 
-    printf("Enter second number: ");
-    scanf("%d", &b);
-
-    printf("First Number: %d \t Second Number: %d", a, b);
-
+    printf("\n%d", scanf_return);
     return 0;
 }
