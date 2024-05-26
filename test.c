@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
+    char str[128];
 
-    int a, b;
+    printf("Enter a string: ");
+    scanf("%[A-Z]s", str);
 
-    int scanf_return = scanf("%d %d", &a, &b);
-    printf("A: %d\nB: %d", a, b);
+    printf("You entered: %s\n", str);
 
-    printf("\n%d", scanf_return);
     return 0;
 }
