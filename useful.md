@@ -126,3 +126,27 @@ int main()
 ```
 
 Just run it
+
+7. I am not sure if it is in any way useful, but here it is:
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+
+    int a, b;
+
+    scanf("%d--%d", &a, &b);
+
+    printf("A: %d, B: %d", a, b);
+
+    return 0;
+}
+```
+
+Output
+```bash
+1--2
+A: 1, B: 2
+```
