@@ -150,3 +150,31 @@ Output
 1--2
 A: 1, B: 2
 ```
+
+8. Interesting Behavior
+
+```c
+#include <stdio.h>
+
+int main()
+{
+
+    int a = 25;
+
+    printf("%d\n", a++); // 25
+    printf("%d\n", a);   // 26
+
+    printf("%d\n", a--); // 26
+    printf("%d\n", a);   // 25
+
+    return 0;
+}
+```
+
+Output
+```bash
+25
+26
+26
+25
+```

@@ -42,7 +42,7 @@ It is the character that denotes the type of data. Some commonly used specifiers
 
 It is the sub-specifier that denotes the minimum number of characters that will be printed.
 
-If the number of characters is less than the specified width, the white space will be used to fill the remaining characters’ places. But if the number of characters is greater than the specified width, all the characters will be still printed without cutting off any.
+If the number of characters is less than the specified width, the white space will be used to fill the remaining characters' places. But if the number of characters is greater than the specified width, all the characters will be still printed without cutting off any.
 
 Syntax
 
