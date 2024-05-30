@@ -509,7 +509,7 @@ Syntax
 
 - Pointer operator & returns the address of a variable. For example &a; will give the actual address of the variable.
 
-- Pointer operator & returns the address of a variable. For example &a; will give the actual address of the variable.
+- The pointer operator * is a pointer to a variable. For example *var; will give the pointer to a variable var.
 
 ```c
 #include <stdio.h>
