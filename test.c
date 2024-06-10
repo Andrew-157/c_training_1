@@ -2,21 +2,10 @@
 
 int main()
 {
-    // declaring dimensions of the rectangle
-    int length = 10;
-    int breadth = 5;
-
-    // declaring variables to store the results
-    int area, perimeter;
-
-    // calculating area
-    area = length * breadth;
-
-    // calculating perimeter
-    perimeter = 2 * (length + breadth);
-
-    // printing results
-    printf("Area = %d\nPerimeter = %d", area, perimeter);
-
+    int a = 5;
+    int b = 5;
+    printf("Pre-Incrementing a = %d\n", ++a);      // 6
+    printf("Post-Incrementing b = %d\n", b++);     // 5
+    printf("Post-Incrementing final b = %d\n", b); // 6
     return 0;
 }
