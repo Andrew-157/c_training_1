@@ -2,11 +2,12 @@
 
 int main()
 {
+    unsigned int x = 1;
 
-    int a = 6, b = 2;
-    printf("a + b is %d\n", a + b);
-    printf("a | b is %d\n", a | b);
-    printf("a & b is %d\n", a & b);
+    int y = ~x;
+    unsigned int z = ~x;
 
+    printf("Signed result %d\n", y);
+    printf("Unsigned result %u\n", z);
     return 0;
 }

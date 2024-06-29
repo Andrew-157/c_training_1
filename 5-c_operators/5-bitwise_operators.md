@@ -113,3 +113,125 @@ a & b is 2
 3. The bitwise XOR operator is very useful
 
 It is used in many problems. A simple example could be “Given a set of numbers where all elements occur an even number of times except one number, find the odd occurring number” This problem can be efficiently solved by doing XOR to all numbers. 
+
+```c
+#include <stdio.h>
+
+int findOdd(int arr[], int n)
+{
+    int res = 0, i;
+    for (i = 0; i < n; i++)
+    {
+        res ^= arr[i];
+        printf("res is %d\n", res);
+    }
+    return res;
+}
+
+int main()
+{
+
+    int arr[] = {12, 12, 14, 90, 14, 14, 14};
+    int n = sizeof(arr) / sizeof(arr[0]); // this is how you find length of an array by the way
+    printf("The odd occurring element is %d\n",
+           findOdd(arr, n));
+    return 0;
+}
+```
+
+Output
+```bash
+res is 12
+res is 0
+res is 14
+res is 84
+res is 90
+res is 84
+res is 90
+The odd occurring element is 90
+```
+
+4. The Bitwise operators should not be used in place of logical operators.
+
+The result of logical operators (&&, || and !) is either 0 or 1, but bitwise operators return an integer value. Also, the logical operators consider any non-zero operand as 1. For example, consider the following program, the results of & and && are different for the same operands. 
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int x = 2, y = 5;
+    (x & y) ? printf("True ") : printf("False "); // 00101 & 00010 = 00000
+    (x && y) ? printf("True ") : printf("False ");
+    return 0;
+}
+```
+
+Output
+```bash
+False True
+```
+
+5. The left-shift and right-shift operators are equivalent to multiplication and division by 2 respectively.
+
+As mentioned in point 1, it works only if numbers are positive.
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int x = 19;
+
+    printf("x << 1 = %d\n", x << 1); // x << 2 would be equivalent to x * 4 and so on
+    printf("x >> 1 = %d\n", x >> 1); // works the same for the right-shift
+
+    return 0;
+}
+```
+
+6. The & operator can be used to quickly check if a number is odd or even.
+
+The value of the expression (x & 1) would be non-zero only if x is odd, otherwise, the value would be zero, because odd numbers have 1 in the end of their binary form, and even numbers have 0 on the end.
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int x = 19;
+
+    (x & 1) ? printf("Odd") : printf("Even");
+
+    return 0;
+}
+```
+
+Output
+```bash
+Odd
+```
+
+7. The ~ operator should be used carefully.
+
+The result of the ~ operator on a small number can be a big number if the result is stored in an unsigned variable. The result may be a negative number if the result is stored in a signed variable (assuming that the negative numbers are stored in 2’s complement form where the leftmost bit is the sign bit).
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    unsigned int x = 1;
+    printf("Signed result %d\n", ~x);
+    printf("Unsigned result %u\n", ~x);
+    return 0;
+}
+```
+
+Output
+```bash
+Signed result -2
+Unsigned result 4294967294
+```
+
+*NOTE*: *The output of the above program is compiler-dependent*
