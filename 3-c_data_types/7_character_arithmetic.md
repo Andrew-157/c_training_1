@@ -44,7 +44,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 numerical value=100
 numerical value=97
 numerical value=124
@@ -67,7 +67,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a = A
 b = B
 a + b = â

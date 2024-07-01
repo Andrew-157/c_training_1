@@ -42,7 +42,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Size of a: 4
 Size of b: 2
 ```
@@ -131,7 +131,7 @@ int main()
 ```
 
 Output
-```bash
+```
 size of num1: 4
 size of num2: 4
 ```

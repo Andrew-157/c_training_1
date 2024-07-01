@@ -110,7 +110,7 @@ int main()
 ```
 
 Output
-```bash
+```
 The sum of 99 and 1 is 100
 ```
 
@@ -143,7 +143,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Printing num with width 10:     123456
 Number of characters printed: 10
 Printing num with width 3: 123456
@@ -175,7 +175,7 @@ int main()
 ```
 
 Output
-```bash
+```
 For integers: 0000002451
 For floats: 12.45
 For strings: Rooms
@@ -200,7 +200,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Using %d: -1294967296
 Using %ld: 3000000000
 ```

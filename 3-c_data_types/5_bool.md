@@ -32,7 +32,7 @@ int main()
 ```
 
 Output
-```bash
+```
 True : 1
 False : 0
 ```
@@ -57,7 +57,7 @@ int main()
 ```
 
 Output
-```bash
+```
 True : 1
 False : 0
 ```
@@ -86,7 +86,7 @@ int main()
 ```
 
 Output
-```bash
+```
 True : 1
 False : 0
 ```
@@ -124,7 +124,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a is smaller
 0 is the result of a>b
 ```
@@ -164,7 +164,7 @@ int main()
 ```
 
 Output
-```bash
+```
 i is 0
 i is 1
 i is 2
@@ -213,6 +213,6 @@ int main()
 ```
 
 Output
-```bash
+```
 5 is odd
 ```

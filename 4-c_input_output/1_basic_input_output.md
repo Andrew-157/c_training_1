@@ -95,7 +95,7 @@ int main()
 **Note:** *When taking input for char in the example above, notice space `scanf(" %c", &ch);`, this is necessary before without it `Enter`(`\n`) from the previous input may be taken as input.*
 
 Output
-```bash
+```
 Enter the integer: 10
 Entered integer is: 10
 
@@ -149,7 +149,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter the Word: GeeksForGeeks
 Entered Word is: GeeksForGeeks
 

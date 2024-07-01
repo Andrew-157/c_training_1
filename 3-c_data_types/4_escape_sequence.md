@@ -45,7 +45,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 My mobile number is 7873923408
 ```
 
@@ -66,7 +66,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 Hi Geeks
 ```
 
@@ -85,7 +85,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 Hello
 World
 ```
@@ -107,7 +107,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 Hello      GFG
 ```
 
@@ -129,7 +129,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 Hello friends
                        Welcome to GFG
 ```
@@ -149,7 +149,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 GeeksforGeeks
 ```
 
@@ -168,7 +168,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 Hello\GFG
 ```
 
@@ -188,7 +188,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 ' Hello Geeks
 " Hello Geeks
 ```
@@ -212,7 +212,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 ??!
 ```
 
@@ -234,7 +234,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 A:5
 ```
 
@@ -258,7 +258,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 BJ
 ```
 

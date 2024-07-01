@@ -67,7 +67,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter first number: 33
 Enter second number: 44
 First Number: 33         Second Number: 44

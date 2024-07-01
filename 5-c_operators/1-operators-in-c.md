@@ -74,7 +74,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a + b = 30
 a - b = 20
 a * b = 125
@@ -124,7 +124,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a < b is 0
 a > b is 1
 a <= b is 0
@@ -164,7 +164,7 @@ int main()
 ```
 
 Output
-```bash
+```
 0
 1
 1
@@ -245,7 +245,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a & b is 1
 1
 a | b is 29
@@ -315,7 +315,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a = b: 5
 a += b: 10
 a -= b: 5
@@ -356,7 +356,7 @@ int main()
 ```
 
 Output
-```bash
+```
 4
 1
 ```
@@ -383,7 +383,7 @@ int main()
 }
 ```
 Output
-```bash
+```
 a: 2, b: 2, c: 3
 ```
 
@@ -402,7 +402,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a: 2, b: 2, c: 3
 ```
 
@@ -422,7 +422,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a: 3, b: 2, c: 3
 ```
 
@@ -444,7 +444,7 @@ int main()
 ```
 
 Output
-```bash
+```
 3
 3
 3
@@ -471,7 +471,7 @@ int main()
 ```
 
 Output
-```bash
+```
 -1
 ```
 
@@ -531,7 +531,7 @@ int main()
 ```
 
 Output
-```bash
+```
 sizeof(num) = 4 bytes
 &num = 0061FF18
 *add_of_num = 10

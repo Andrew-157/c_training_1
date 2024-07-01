@@ -27,7 +27,7 @@ int main(void)
 **NOTE:** *Notice that `scanf("%[A-Z]s", str)` does not use `&` operator for `str`, this is due to the fact that `str` and `&str` both indicate address of the array(address of the first element of the array, to be exact), and there is no need for ampersand, unlike, for example, in integer `var` is the value and `&var` is the address. You can use `scanf` with or without `&` when scanning character arrays - strings, however, there is really no point in using ampersand for scanning strings.* 
 
 Output
-```bash
+```
 Enter a string: HELLOworld
 You entered: HELLO
 ```
@@ -57,7 +57,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 Enter a string: Night is Yours
 You entered: Night is Y
 ```
@@ -80,7 +80,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter a string with spaces: Hello World!
 String you entered: Hello World!
 ```
@@ -104,7 +104,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter a string: HoFoOOOhfffeeedd
 String you entered: HoFoOOOhfff
 ```
@@ -126,7 +126,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter a string: I need POWER!
 String you entered: I need POWER!
 ```

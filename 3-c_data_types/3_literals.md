@@ -163,7 +163,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Welcome
 To
 Geeks   For     Geeks

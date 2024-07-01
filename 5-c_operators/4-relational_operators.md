@@ -134,7 +134,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a is greater than b
 a is greater than or equal to b
 a is greater than or equal to b

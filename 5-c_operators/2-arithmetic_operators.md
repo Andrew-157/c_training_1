@@ -55,7 +55,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a is 10 , b is 4
 a + b is 14
 a - b is 6
@@ -155,7 +155,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Post Increment and Decrement
 a is 11 and result is 10
 a is 10 and result is 11
@@ -186,7 +186,7 @@ int main()
 ```
 
 Output
-```bash
+```
 203
 ```
 
@@ -220,7 +220,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Area = 50
 Perimeter = 30
 ```

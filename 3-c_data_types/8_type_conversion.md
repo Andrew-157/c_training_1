@@ -52,7 +52,7 @@ int main()
 ```
 
 Output
-```bash
+```
 x = 107, z = 108.000000
 ```
 
@@ -85,7 +85,7 @@ int main()
 ```
 
 Output
-```bash
+```
 sum = 2
 ```
 
@@ -104,7 +104,7 @@ return 0;
 ```
 
 Output
-```bash
+```
 a = 1.500000
 b = 1
 ```

@@ -126,7 +126,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Entered unsigned integer: 25
 Printing -10 using %u: 4294967286 // 2^32 - 10 = 4294967286
 ```
@@ -161,7 +161,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter float: 12.67
 Float you entered: 12.670000
 Enter float: 1.267000e+01
@@ -173,7 +173,7 @@ Float you entered: 1.267000E+001
 or
 
 Output
-```bash
+```
 Enter float: 12.67
 Float you entered: 12.670000
 Enter float: 1.267000E+01
@@ -204,7 +204,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter integer in octal: 074
 Integer you entered in octal form: 74
 Integer you entered in decimal form: 60
@@ -237,7 +237,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter integer in hexadecimal form in lowercase: 3c
 Entered integer in hexadecimal form in lowercase: 3c
 Enter integer in hexadecimal form in uppercase: 3C
@@ -280,7 +280,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter a word: Hello
 Entered word: Hello
 Enter a sentence: Hello World!
@@ -304,7 +304,7 @@ int main()
 ```
 
 Output
-```bash
+```
 The Memory Address of a: 0x7ffe9645b3fc
 ```
 
@@ -337,7 +337,7 @@ int main()
 ```
 
 Output
-```bash
+```
        roomsformoney
 roomsformoney
                rooms

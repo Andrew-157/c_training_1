@@ -43,7 +43,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Positive Integer: 100
 Negative Integer: -100
 ```
@@ -86,7 +86,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Pre-Incrementing a = 6
 Post-Incrementing b = 5
 Post-Incrementing final b = 6
@@ -133,7 +133,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Pre-Decrementing: 4
 Post-Decrementing: 5
 Final b value: 4
@@ -162,7 +162,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a is greater than b
 ```
 
@@ -183,7 +183,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Address of a is: 0061FF1C
 ```
 
@@ -206,7 +206,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Size of double: 8
 Size of int: 4
 ```

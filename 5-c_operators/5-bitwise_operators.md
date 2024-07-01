@@ -48,7 +48,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a = 5, b = 9
 a & b is 1
 a | b is 13
@@ -83,7 +83,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a + b is 7
 a | b is 7
 ```
@@ -104,7 +104,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a + b is 8
 a | b is 6
 a & b is 2
@@ -140,7 +140,7 @@ int main()
 ```
 
 Output
-```bash
+```
 res is 12
 res is 0
 res is 14
@@ -168,7 +168,7 @@ int main()
 ```
 
 Output
-```bash
+```
 False True
 ```
 
@@ -208,7 +208,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Odd
 ```
 
@@ -229,7 +229,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Signed result -2
 Unsigned result 4294967294
 ```

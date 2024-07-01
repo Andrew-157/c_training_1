@@ -41,7 +41,7 @@ int main()
 ```
 
 Output
-```bash
+```
 2 and 8 are even number
 ```
 
@@ -74,7 +74,7 @@ int main()
 ```
 
 Output
-```bash
+```
 c = 2 and d = 8
 ```
 
@@ -110,7 +110,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter any character:
 Enter a char:
 Char you entered: g
@@ -142,7 +142,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter any character: E
 Enter any character: f
 Character you entered: f
@@ -200,7 +200,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a
 A
 ```
@@ -228,7 +228,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter a sentence: Hello World!
 Sentence you entered: Hello World!
 ```
@@ -262,7 +262,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter a username: andrew157
 Username you entered: andrew157
 ```
@@ -293,7 +293,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Enter any character:
 Entered character is: f
 ```

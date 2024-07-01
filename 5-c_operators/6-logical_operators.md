@@ -40,7 +40,7 @@ int main()
 ```
 
 Output
-```bash
+```
 a and b are larger than 0
 ```
 
@@ -74,7 +74,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Either one or both of the values are greater than zero
 ```
 

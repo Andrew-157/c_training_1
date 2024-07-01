@@ -16,7 +16,7 @@ int main()
 ```
 
 Output
-```bash
+```
 120
 ```
 
