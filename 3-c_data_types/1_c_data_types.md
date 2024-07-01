@@ -109,7 +109,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Value of a: a
 Value of a after increment is: b
 Value of c: c
@@ -142,7 +142,7 @@ int main()
 ```
 
 Output
-```bash
+```
 9.000000
 2.500000
 0.000200
@@ -178,7 +178,7 @@ int main()
 ```
 
 Output
-```bash
+```
 123123123.000000
 12.293123
 2312312312.123123
@@ -225,7 +225,7 @@ int main()
 ```
 
 Output
-```bash
+```
 The size of int data type : 4
 The size of char data type : 1
 The size of float data type : 4

@@ -146,7 +146,7 @@ int main(void)
 ```
 
 Output
-```bash
+```
 1--2
 A: 1, B: 2
 ```
@@ -172,7 +172,7 @@ int main()
 ```
 
 Output
-```bash
+```
 25
 26
 26

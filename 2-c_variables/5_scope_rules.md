@@ -23,7 +23,7 @@ void func() { printf("%d", var); }
 ```
 
 Output
-```bash
+```
 solution.c: In function 'func':
 solution.c:15:28: error: 'var' undeclared (first use in this function)
  void func() { printf("%d", var); }
@@ -75,7 +75,7 @@ int main()
 ```
 
 Output
-```bash
+```
 Before change within main: 5
 After change within main: 10
 ```
@@ -161,7 +161,7 @@ int main()
 ```
 
 Output
-```bash
+```
 x = 10, y = 20
 x = 11, y = 41
 x = 11, y = 20
