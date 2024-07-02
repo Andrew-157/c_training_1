@@ -38,7 +38,7 @@ The tokens of C language can be classified into six types based on the functions
 
 4. Strings
 
-    Strings are nothing but an array of characters ended with a null character (‘\0’). This null character indicates the end of the string. Strings are always enclosed in double quotes. Whereas, a character is enclosed in single quotes in C and C++.
+    Strings are nothing but an array of characters ended with a null character (`\0`). This null character indicates the end of the string. Strings are always enclosed in double quotes. Whereas, a character is enclosed in single quotes in C and C++.
 
     ```c
     char string[20] = {'h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd', '\0'};

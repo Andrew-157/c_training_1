@@ -1,17 +1,23 @@
 #include <stdio.h>
 
-// driver code
+void print_a(int a)
+{
+    printf("Value of a is %d\n", a);
+}
+
 int main()
 {
-    char a[50];
-    printf("Enter a word: ");
-    scanf("%s", &a);
-    printf("Entered word: %s\n", a);
 
-    char b[50];
-    printf("Enter a sentence: ");
-    scanf(" %[^\n]s", b);
-    printf("Entered sentence: %s", b);
+    int a = 10;
+    print_a(a);
+    a += 10;
+    print_a(a);
+    a -= 10;
+    print_a(a);
+    a *= 10;
+    print_a(a);
+    a /= 10;
+    print_a(a);
 
     return 0;
 }
