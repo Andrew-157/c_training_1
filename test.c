@@ -1,23 +1,24 @@
+#include <stdbool.h>
 #include <stdio.h>
 
-void decrement()
+void is_leap(int year)
 {
-    int a = 5;
-    int b = 5;
-
-    // PREFIX
-    int prefix = --a; // Decrement takes place before assignment
-    printf("Prefix = %d\n", prefix);
-
-    // POSTFIX
-    int postfix = b--; // Decrement takes place after assignment
-    printf("Postfix = %d\n", postfix);
+    (year % 4 == 0) ? (year % 100 != 0 ? printf("%d is a leap year\n", year)
+                                       : (year % 400 == 0 ? printf("%d is a leap year\n", year)
+                                                          : printf("%d is not a leap year\n", year)))
+                    : printf("%d is not a leap year\n", year);
 }
 
 int main()
 {
+    int year;
 
-    decrement();
+    while (true)
+    {
+        printf("Enter a year: ");
+        scanf(" %d", &year);
+        is_leap(year);
+    }
 
     return 0;
 }
