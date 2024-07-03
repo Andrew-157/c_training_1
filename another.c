@@ -2,9 +2,11 @@
 
 int main()
 {
-    int a = 0b00010, b = 0b00101;
 
-    printf("%d\n", a & b);
+    int a = 5;
+    int result = a++;
+    printf("result %d\n", result);
+    printf("a %d\n", a);
 
     return 0;
 }

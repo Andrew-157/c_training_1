@@ -1,23 +1,23 @@
 #include <stdio.h>
 
-void print_a(int a)
+void decrement()
 {
-    printf("Value of a is %d\n", a);
+    int a = 5;
+    int b = 5;
+
+    // PREFIX
+    int prefix = --a; // Decrement takes place before assignment
+    printf("Prefix = %d\n", prefix);
+
+    // POSTFIX
+    int postfix = b--; // Decrement takes place after assignment
+    printf("Postfix = %d\n", postfix);
 }
 
 int main()
 {
 
-    int a = 10;
-    print_a(a);
-    a += 10;
-    print_a(a);
-    a -= 10;
-    print_a(a);
-    a *= 10;
-    print_a(a);
-    a /= 10;
-    print_a(a);
+    decrement();
 
     return 0;
 }
