@@ -32,7 +32,7 @@ int main()
         scanf(" %c", &operator);
         while (!(is_valid_operator(operator)))
         {
-            printf("ERROR. Not valid operator. Valid choices are: {\"+\", \"-\", \"*\", \"/\"}}\n");
+            printf("ERROR. %c is not a valid operator. Valid choices are: {\"+\", \"-\", \"*\", \"/\"}}\n", operator);
             printf("Enter operator again: ");
             scanf(" %c", &operator);
         }
