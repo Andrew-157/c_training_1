@@ -2,6 +2,8 @@
 
 The increment ( `++` ) and decrement ( `--` ) operators in C are unary operators for incrementing and decrementing the numeric values by 1 respectively. The incremental and decremental are one of the most frequently used operations in programming for looping, array traversal, pointer arithmetic, and many more.
 
+**IMPORTANT**: *postfix increment/decrement both **evaluate** to the non-changed value of the variable, and then increment or decrement variable's value*
+
 ## Increment Operator in C
 
 The increment operator ( ++ ) is used to increment the value of a variable in an expression by 1. It can be used on variables of the numeric type such as integer, float, character, pointers, etc.
