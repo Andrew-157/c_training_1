@@ -1,22 +1,22 @@
-// Associativity is not used in the below program.
-// Output is compiler dependent.
-
 #include <stdio.h>
 
-int x = 0;
-int f1()
+int findOdd(int arr[], int n)
 {
-    x = 5;
-    return x;
+    int res = 0, i;
+    for (i = 0; i < n; i++)
+    {
+        res ^= arr[i];
+        printf("res is %d\n", res);
+    }
+    return res;
 }
-int f2()
-{
-    x = 10;
-    return x;
-}
+
 int main()
 {
-    int p = f1() + f2();
-    printf("%d ", x);
+
+    int arr[] = {12, 12, 14, 90, 14, 14, 14};
+    int n = sizeof(arr) / sizeof(arr[0]); // this is how you find length of an array by the way
+    printf("The odd occurring element is %d\n",
+           findOdd(arr, n));
     return 0;
 }
