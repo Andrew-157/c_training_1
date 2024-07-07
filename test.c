@@ -1,48 +1,31 @@
-// C program to find whether number is prime - method 2 (sqrt(n))
-#include <math.h>
-#include <stdbool.h>
 #include <stdio.h>
-
-/*
-In this method, we use a mathematical property which states that:
-The smallest and greater than one factor of a number cannot be
-more than the square root of that number.
-*/
-
-bool isPrime(int number)
-{
-    if (number == 1)
-    {
-        return false;
-    }
-    for (int i = 2; i <= sqrt(number); i++)
-    {
-        if (number % i == 0)
-        {
-            return false;
-        }
-    }
-    return true;
-}
 
 int main()
 {
-    int arr[] = {2, 45, 8, 90, 99, 17, 23, 32, 31, 1};
 
-    int length = sizeof(arr) / sizeof(arr[0]);
+    int num;
+    printf("Enter a number: ");
+    scanf(" %d", &num);
 
-    for (int i = 0; i < length; i++)
+    int flag = 0;
+
+    // loop to check if the number is not prime
+    // rather than if it is prime
+    for (int i = 2; i * i <= num; i++)
     {
-        int currNum = arr[i];
-        if (isPrime(currNum))
+        if (num % i == 0)
         {
-            printf("%d is prime\n", currNum);
-        }
-        else
-        {
-            printf("%d is not prime\n", currNum);
+            flag = 1;
+            break;
         }
     }
+
+    printf("%d is ", num);
+    if (flag || num == 1) // Would be better to check it higher in the code to avoid loop
+    {
+        printf("not ");
+    }
+    printf("a prime number.\n");
 
     return 0;
 }
