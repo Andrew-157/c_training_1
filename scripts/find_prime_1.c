@@ -1,12 +1,14 @@
-// C program to find whether number is prime - method 2 (sqrt(n))
-#include <math.h>
+// C program to find whether number is prime - method 1 (Simple Method)
 #include <stdbool.h>
 #include <stdio.h>
 
-/*
-In this method, we use a mathematical property which states that:
-The smallest and greater than one factor of a number cannot be
-more than the square root of that number.
+/*In this method, we will check if any number between 2 to (N/2) can divide N completely.
+If such a number exists, it means that the number N is not a prime number as it is divisible
+by a number other than 1 and itself.*/
+
+/* We take (N/2) as the upper limit because there are no numbers between (N/2) and N that
+can divide N completely. If the number is not prime, then N/2 is the largest number that will
+divide N without a remainder, apart from N, of course.
 */
 
 bool isPrime(int number)
@@ -15,7 +17,8 @@ bool isPrime(int number)
     {
         return false;
     }
-    for (int i = 2; i <= sqrt(number); i++)
+
+    for (int i = 2; i <= number / 2; i++)
     {
         if (number % i == 0)
         {
