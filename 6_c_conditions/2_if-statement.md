@@ -39,7 +39,7 @@ Output
 9 is less than 10
 ```
 
-## Examples of if Statements in C
+## Examples of if Statement in C
 
 1. C Program to check whether the number is even or odd
 
