@@ -1,30 +1,68 @@
+#include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-void mapMarkToGrade(int studentId, int mark)
+bool isOperatorValid(char operator, char arr[], int arrLength)
 {
-    if (mark <= 100 && mark >= 90)
-        printf("Student %d with mark %d got A+\n", studentId, mark);
-    else if (mark < 90 && mark >= 80)
-        printf("Student %d with mark %d got A\n", studentId, mark);
-    else if (mark < 80 && mark >= 70)
-        printf("Student %d with mark %d got B\n", studentId, mark);
-    else if (mark < 70 && mark >= 60)
-        printf("Student %d with mark %d got C\n", studentId, mark);
-    else if (mark < 60 && mark >= 50)
-        printf("Student %d with mark %d got D\n", studentId, mark);
-    else
-        printf("Student %d with mark %d got F\n", studentId, mark);
+    for (int i = 0; i < arrLength; i++)
+    {
+        if (arr[i] == operator)
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 int main()
 {
-    int marks[] = {99, 42, 67, 91, 80, 77};
-    int length = sizeof(marks) / sizeof(marks[0]);
+    char operator;
+    int x, y;
 
-    for (int i = 0; i < length; i++)
+    char validOperators[] = {'+', '-', '*', '/', 'x', 'X'};
+    int arrLength = sizeof(validOperators) / sizeof(validOperators[0]);
+
+    while (true)
     {
-        int studentId = i + 1, mark = marks[i];
-        mapMarkToGrade(studentId, mark);
+        printf("Enter one of the following operators: (+, -, *, /) or X|x to exit: ");
+        scanf(" %c", &operator);
+
+        if ((isOperatorValid(operator, validOperators, arrLength) | 0) == 0) // well, this is unnecessarily complicates
+        {
+            printf("Invalid operator\n");
+            continue;
+        }
+
+        if (operator== 'x' || operator== 'X')
+        {
+            printf("Exiting the calculator...\n");
+            exit(0);
+        }
+
+        printf("Enter the two numbers: ");
+        scanf(" %d %d", &x, &y);
+
+        char toPrint[] = "%d %c %d = %d\n";
+        switch (operator)
+        {
+        case '+':
+            printf(toPrint, x, operator, y, x + y);
+            break;
+        case '-':
+            printf(toPrint, x, operator, y, x - y);
+            break;
+        case '*':
+            printf(toPrint, x, operator, y, x * y);
+            break;
+        case '/':
+            if ((y == 0) == true)
+            {
+                printf("Division by zero is not allowed, change the order of the operators\n");
+                break;
+            }
+            printf(toPrint, x, operator, y, x / y);
+            break;
+        }
     }
 
     return 0;
