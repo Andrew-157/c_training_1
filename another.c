@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
-    int j = 0;
 
-    do
+    for (int i = 0; i < 5; i++)
     {
-        printf("%d\n", j);
-        j++;
-    } while (j < 3);
+        printf("%d ", i);
+    }
 
     return 0;
 }
