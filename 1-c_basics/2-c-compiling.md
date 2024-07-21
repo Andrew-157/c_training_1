@@ -5,6 +5,7 @@ The compilation is the process of converting the source code of the C language i
 ![Compiling in C](./images/Compilation-Process-in-C.png "a title")
 
 Files created during the compilation process:
+
 - `*.i` - Preprocessed file
 - `*.s` - Assembly code
 - `*.o` - Object code
