@@ -1,13 +1,12 @@
-#include <stdbool.h>
 #include <stdio.h>
 
 int main()
 {
 
-    do
+    for (;;)
     {
-        printf("This loop will run forever...\n");
-    } while (true);
+        printf("0");
+    }
 
     return 0;
 }
