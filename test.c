@@ -3,17 +3,29 @@
 int main()
 {
 
-    for (int i = 0; i < 5; i++)
+    printf("The loop with break produces the following output:\n");
+    for (int i = 1; i <= 7; i++)
     {
-        for (int j = 0; j < 3; j++)
+        if (i % 3 == 0)
         {
-            if (j == 2)
-            {
-                continue;
-            }
-            printf("%d ", j);
+            break;
         }
-        printf("\n");
+        printf("%d ", i);
     }
+
+    printf("\n");
+
+    printf("The loop with continue produces the following output:\n");
+
+    for (int i = 1; i <= 7; i++)
+    {
+        if (i % 3 == 0)
+        {
+            continue;
+        }
+        printf("%d ", i);
+    }
+
+    printf("\n");
     return 0;
 }
