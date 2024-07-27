@@ -1,25 +1,23 @@
+
+
+// C program to print numbers
+// from 1 to 10 using goto statement
 #include <stdio.h>
 
+// function to print numbers from 1 to 10
+void printNumbers()
+{
+    int n = 1;
+label:
+    printf("%d ", n);
+    n++;
+    if (n <= 10)
+        goto label;
+}
+
+// Driver program to test above function
 int main()
 {
-    // nested for loops with break statement
-    // at inner loop
-    for (int i = 1; i <= 6; ++i)
-    {
-        for (int j = 1; j <= i; ++j)
-        {
-            if (i <= 4)
-            {
-                printf("%d ", j);
-            }
-            else
-            {
-                // if i > 4 then this innermost loop will
-                // break
-                break;
-            }
-        }
-        printf("\n");
-    }
+    printNumbers();
     return 0;
 }
