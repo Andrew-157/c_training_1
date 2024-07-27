@@ -1,31 +1,41 @@
+#include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
 
-    printf("The loop with break produces the following output:\n");
-    for (int i = 1; i <= 7; i++)
+    while (true)
     {
-        if (i % 3 == 0)
+        char operator;
+        float operand1, operand2;
+
+        printf("Enter + or -. Enter x to exit: ");
+        scanf(" %c", &operator);
+
+        printf("Enter 2 numbers: ");
+        scanf(" %f %f", &operand1, &operand2);
+
+        char output[] = "Result: %.1f %c %.1f = %.1f\n";
+        float result;
+
+        switch (operator)
         {
+        case '+':
+            result = operand1 + operand2;
+            printf(output, operand1, operator, operand2, result);
             break;
+        case '-':
+            result = operand1 - operand2;
+            printf(output, operand1, operator, operand2, result);
+            break;
+        case 'x':
+            printf("Exiting the program...");
+            exit(0);
+        default:
+            printf("ERROR: Invalid operator\n");
         }
-        printf("%d ", i);
     }
 
-    printf("\n");
-
-    printf("The loop with continue produces the following output:\n");
-
-    for (int i = 1; i <= 7; i++)
-    {
-        if (i % 3 == 0)
-        {
-            continue;
-        }
-        printf("%d ", i);
-    }
-
-    printf("\n");
     return 0;
 }

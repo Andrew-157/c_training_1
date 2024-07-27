@@ -64,7 +64,7 @@ Precision subspecifier meaning differs for different format specifiers it is bei
 
 - **For Float or Double Data(f, e, a, A):** Specifies the number of digits to be printed after the decimal point.
 
-- **For String (s):** pecifies the length of the string to be printed.
+- **For String (s):** specifies the length of the string to be printed.
 
 Syntax
 
