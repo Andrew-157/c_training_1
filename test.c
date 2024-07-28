@@ -1,19 +1,18 @@
 #include <stdio.h>
 
-void swap(int *var1, int *var2)
+void modify(int *ptr)
 {
-    int temp = *var1;
-    *var1 = *var2;
-    *var2 = temp;
-    printf("var1 and var2 inside swap function: %d %d\n", *var1, *var2);
+    *ptr += 5;
 }
 
 int main()
 {
+    int x = 5;
+    printf("Value of x before calling modify function: %d\n", x);
 
-    int var1 = 2, var2 = 3;
-    printf("var1 and var2 before calling swap function: %d %d\n", var1, var2);
-    swap(&var1, &var2);
-    printf("var1 and var2 after calling swap function: %d %d\n", var1, var2);
+    int *myPtr = &x;
+    modify(myPtr); // modify(&x) works the same, this may be obvious if you know pointers, but I don't yet :)
+    printf("Value of x after calling modify function: %d\n", x);
+
     return 0;
 }
