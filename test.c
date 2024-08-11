@@ -1,22 +1,15 @@
 #include <stdio.h>
 
-void A()
+int main(void)
 {
-    printf("I am a callback function\n");
-}
 
-void B(void (*ptr)())
-{
-    (*ptr)(); // callback to function A
-}
+    int view()
+    {
+        printf("Inner view function\n");
+        return 0;
+    }
 
-int main()
-{
-    void (*ptr)() = &A;
-
-    // Calling function B with
-    // the address of function A as an argument
-    B(ptr);
+    view();
 
     return 0;
 }
