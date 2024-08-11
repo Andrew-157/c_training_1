@@ -1,11 +1,22 @@
 #include <stdio.h>
 
-func(int x)
+void A()
 {
-    return x * x;
+    printf("I am a callback function\n");
+}
+
+void B(void (*ptr)())
+{
+    (*ptr)(); // callback to function A
 }
 
 int main()
 {
-    printf("%d\n", func(10));
+    void (*ptr)() = &A;
+
+    // Calling function B with
+    // the address of function A as an argument
+    B(ptr);
+
+    return 0;
 }
