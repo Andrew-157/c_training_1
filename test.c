@@ -1,6 +1,11 @@
 #include <stdio.h>
 
-int main(char *argv[])
+func(int x)
 {
-    printf("%c\n", argv[0]);
+    return x * x;
+}
+
+int main()
+{
+    printf("%d\n", func(10));
 }
