@@ -1,18 +1,20 @@
+#include <errno.h>
 #include <stdio.h>
 
-void modify(int *ptr)
+int main(int argc, char *argv[])
 {
-    *ptr += 5;
-}
+    FILE *fp;
 
-int main()
-{
-    int x = 5;
-    printf("Value of x before calling modify function: %d\n", x);
+    fp = fopen(argv[1], "r");
+    if (fp == NULL)
+    {
+        fprintf(stderr, "%s\n", strerror(errno));
+        return errno;
+    }
 
-    int *myPtr = &x;
-    modify(myPtr); // modify(&x) works the same, this may be obvious if you know pointers, but I don't yet :)
-    printf("Value of x after calling modify function: %d\n", x);
+    printf("file exist\n");
+
+    fclose(fp);
 
     return 0;
 }
