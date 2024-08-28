@@ -1,12 +1,8 @@
+#include <math.h>
 #include <stdio.h>
-#include <stdnoreturn.h>
-
-noreturn void func()
-{
-    printf("Hello World\n");
-}
 
 int main()
 {
-    func();
+    printf("%lf ^ %d = %lf\n", 8.0, 3, pow(8, 3));
+    return 0;
 }
