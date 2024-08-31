@@ -1,14 +1,12 @@
-#include <math.h>
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-    double x, ret;
-    x = 0.5;
+    char null = '\0';
+    if (!null)
+    {
+        printf("\\0 is nothing\n");
+    }
 
-    ret = tanh(x);
-    printf("The hyperbolic tangent of %lf is %lf degrees",
-           x, ret);
-
-    return (0);
+    return 0;
 }
