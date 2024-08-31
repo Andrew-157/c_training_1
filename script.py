@@ -1,6 +1,5 @@
 
-a = [1, 2, 4]
+def printArray(array):
+    ...
 
-for i in a:
-    print(i)
-    a.append(i)
+three_d_arrays = [[[1, 2, 3]]]
