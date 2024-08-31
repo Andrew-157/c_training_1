@@ -286,3 +286,181 @@ Output
 ```bash
 8.000000 ^ 3 = 512.000000
 ```
+
+## double modf(double x, double *integer)
+
+The C library function double modf(double x, double *integer) returns the fraction component (part after the decimal), and sets integer to the integer component.
+
+Syntax
+
+```c
+double modf(double x, double *integer);
+```
+
+```c
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+    double x, fractpart, integer;
+
+    x = 8.56474;
+    fractpart = modf(x, &integer);
+    printf("Integer part: %d\n", (int)integer);
+    printf("Fraction part: %lf\n", fractpart);
+    return 0;
+}
+```
+
+Output
+
+```bash
+Integer part: 8
+Fraction part: 0.564740
+```
+
+## double exp(double x)
+
+The C library function double exp(double x) returns the value of e raised to the xth power.
+
+Syntax
+
+```c
+double exp(double x);
+```
+
+```c
+double x = 0; 
+  
+    printf("The exponential value of %lf is %lf\n", x, 
+           exp(x)); 
+    printf("The exponential value of %lf is %lf\n", x + 1, 
+           exp(x + 1)); 
+    printf("The exponential value of %lf is %lf\n", x + 2, 
+           exp(x + 2)); 
+  
+    return (0); 
+```
+
+```bash
+The exponential value of 0.000000 is 1.000000
+The exponential value of 1.000000 is 2.718282
+The exponential value of 2.000000 is 7.389056
+```
+
+## double cos(double x)
+
+The C library function double cos(double x) returns the cosine of a radian angle x.
+
+Syntax
+
+```c
+double cos(double x)
+```
+
+The same syntax can be used for other trigonometric functions like sin, tan, etc.
+
+```c
+#include <math.h>
+#include <stdio.h>
+
+#define Pi 3.14159265
+
+double calculateCosine(double angle)
+{
+    double val = Pi / 180;
+    return cos(angle * val);
+}
+
+int main()
+{
+    double angles[2] = {60.0, 90.0};
+
+    for (int i = 0; i < 2; i++)
+    {
+        double currAngle = angles[i];
+        printf("The cosine of %lf is %lf\n", currAngle, calculateCosine(currAngle));
+    }
+
+    return (0);
+}
+```
+
+Output
+
+```bash
+The cosine of 60.000000 is 0.500000
+The cosine of 90.000000 is 0.000000
+```
+
+## double acos(double x)
+
+The C library function double acos(double x) returns the arc cosine of x in radians.
+
+Syntax
+
+```c
+double acos(double x);
+```
+
+The same syntax can be used for other arc trigonometric functions like asin, atan etc.
+
+```c
+#include <math.h> 
+#include <stdio.h> 
+  
+#define PI 3.14159265 
+  
+int main() 
+{ 
+    double x, ret, val; 
+  
+    x = 0.9; 
+    val = 180.0 / PI; 
+  
+    ret = acos(x) * val; 
+    printf("The arc cosine of %lf is %lf degrees", x, ret); 
+  
+    return (0); 
+}
+```
+
+Output
+
+```bash
+The arc cosine of 0.900000 is 25.841933 degrees
+```
+
+## double tanh(double x)
+
+The C library function double tanh(double x) returns the hyperbolic tangent of x.
+
+Syntax
+
+```c
+double tanh(double x);
+```
+
+The same syntax can be used for other hyperbolic trigonometric functions like sinh, cosh etc.
+
+```c
+#include <math.h> 
+#include <stdio.h> 
+  
+int main() 
+{ 
+    double x, ret; 
+    x = 0.5; 
+  
+    ret = tanh(x); 
+    printf("The hyperbolic tangent of %lf is %lf degrees", 
+           x, ret); 
+  
+    return (0); 
+}
+```
+
+```bash
+The hyperbolic tangent of 0.500000 is 0.462117 degrees
+```

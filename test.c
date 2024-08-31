@@ -3,6 +3,12 @@
 
 int main()
 {
-    printf("%lf ^ %d = %lf\n", 8.0, 3, pow(8, 3));
-    return 0;
+    double x, ret;
+    x = 0.5;
+
+    ret = tanh(x);
+    printf("The hyperbolic tangent of %lf is %lf degrees",
+           x, ret);
+
+    return (0);
 }
