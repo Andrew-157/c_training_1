@@ -3,7 +3,7 @@
 #define MAXLINE 50
 
 /*
- * Example from "C programming laguage" book
+ * Example from "C programming language" book
  */
 
 int getLine(char line[], int lim);
