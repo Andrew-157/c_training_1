@@ -1,21 +1,49 @@
 #include <stdio.h>
+#include <string.h>
 
-int findLargest(int *arr, int size)
-{
-    int largest = 0;
-    for (int i = 0; i < size; i++)
-    {
-        int curr = arr[i];
-        if (curr > largest)
-        {
-            largest = curr;
-        }
-    }
-    return largest;
-}
+#define MAXLINE 50
+
+/*
+ * Example from "C programming laguage" book
+ */
+
+int getLine(char line[], int lim);
+void copy(char to[], char from[]);
 
 int main()
 {
-    int arr[10] = {135, 165, 1, 16, 511, 65, 654, 654, 169, 4};
-    printf("The largest number in the array is %d\n", findLargest(arr, 10));
+
+    int max = 0;
+    int currLen = 0;
+    char currLine[MAXLINE];
+    char longest[MAXLINE];
+
+    while ((currLen = getLine(currLine, MAXLINE)) != 0)
+    {
+        if (currLen > max)
+        {
+            max = currLen;
+            strcpy(longest, currLine);
+        }
+    }
+
+    if (max > 0)
+    {
+        printf("\nThe longest line has length of: %d\n", max);
+        printf("The longest line is: %s", longest);
+        if (longest[max - 1] != '\n')
+            printf("\n");
+    }
+}
+
+int getLine(char line[], int lim)
+{
+
+    int c, i;
+    for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; i++)
+        line[i] = c;
+    if (c == '\n')
+        line[i++] = c;
+    line[i] = '\0';
+    return i;
 }
